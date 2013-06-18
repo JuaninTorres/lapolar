@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -66,11 +66,11 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'database',
-			'username' => 'root',
-			'password' => '',
+			'database' => 'lapolardb',
+			'username' => 'lapolaruser',
+			'password' => 'lapolarpass',
 			'charset'  => 'utf8',
-			'prefix'   => '',
+			'prefix'   => 'lap_',
 			'schema'   => 'public',
 		),
 
