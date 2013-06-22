@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Laravel PHP Framework</title>
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <style>
-        @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-
         body {
             margin:0;
             font-family:'Lato', sans-serif;
