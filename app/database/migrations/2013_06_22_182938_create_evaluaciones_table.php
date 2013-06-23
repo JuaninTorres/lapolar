@@ -16,6 +16,7 @@ class CreateEvaluacionesTable extends Migration {
 		{
 			$table->increments('id');
 			$table->integer('user_id');
+			$table->integer('disenoevaluaciones_id');
 			$table->enum('estado', array('abierta', 'cerrada'))->default('abierta');
 			$table->timestamps();
 		});

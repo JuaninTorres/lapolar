@@ -15,6 +15,10 @@ class CreateCategoriasTable extends Migration {
 		Schema::create('categorias', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('disenoevaluaciones_id');
+			$table->string('nombre');
+			$table->integer('dependencia')->nullable();
+			$table->smallInteger('item_order');
 			$table->timestamps();
 		});
 	}
