@@ -15,6 +15,8 @@ class CreateEvaluacionesTable extends Migration {
 		Schema::create('evaluaciones', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->integer('user_id');
+			$table->enum('estado', array('abierta', 'cerrada'))->default('abierta');
 			$table->timestamps();
 		});
 	}

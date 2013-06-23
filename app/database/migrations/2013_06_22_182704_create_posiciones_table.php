@@ -15,6 +15,9 @@ class CreatePosicionesTable extends Migration {
 		Schema::create('posiciones', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('nombre');
+			$table->integer('dependencia');
+			$table->integer('sucursal_id');
 			$table->timestamps();
 		});
 	}

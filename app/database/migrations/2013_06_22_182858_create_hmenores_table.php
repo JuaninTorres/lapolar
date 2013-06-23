@@ -15,6 +15,9 @@ class CreateHmenoresTable extends Migration {
 		Schema::create('hmenores', function(Blueprint $table)
 		{
 			$table->increments('id');
+			$table->string('rut');
+			$table->string('nombre');
+			$table->string('apellido');
 			$table->timestamps();
 		});
 	}
